@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rithanya S | Aspiring CSE (AI & ML) Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f5f4fb;--card:#fff;--text:#15131f;--muted:#5d5a72;--line:rgba(21,19,31,.11);--acc:#6b47ff;--glow:rgba(107,71,255,.16);--nav:rgba(245,244,251,.82)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a0a10;--card:#12111b;--text:#f3f2f9;--muted:#a19eb6;--line:rgba(255,255,255,.09);--acc:#9078ff;--glow:rgba(144,120,255,.26);--nav:rgba(10,10,16,.82)}}
+:root[data-theme="dark"]{--bg:#0a0a10;--card:#12111b;--text:#f3f2f9;--muted:#a19eb6;--line:rgba(255,255,255,.09);--acc:#9078ff;--glow:rgba(144,120,255,.26);--nav:rgba(10,10,16,.82)}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font:400 15.5px/1.65 Sora,system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(55% 45% at 85% -5%,var(--glow),transparent 70%),radial-gradient(45% 35% at 0% 100%,var(--glow),transparent 70%)}
+a:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
+.wrap{max-width:1100px;margin:auto;padding:0 20px}
+header{position:sticky;top:0;z-index:10;background:var(--nav);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;gap:14px;height:60px}
+.logo{font-weight:600;letter-spacing:-.02em;white-space:nowrap;color:var(--text);text-decoration:none}
+nav{position:relative;flex:1;min-width:0;display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+nav::-webkit-scrollbar{display:none}
+nav a{padding:6px 12px;border-radius:99px;color:var(--muted);text-decoration:none;font-size:13.5px;white-space:nowrap;transition:color .2s,background .2s}
+nav a:first-child{margin-left:auto}
+nav a:hover{color:var(--text)}
+nav a.on{color:var(--text);background:var(--line)}
+section{padding:64px 0;scroll-margin-top:60px}
+h2{font-weight:300;font-size:clamp(1.9rem,5.5vw,2.9rem);letter-spacing:-.035em;line-height:1.1;margin-bottom:28px}
+#home{position:relative;overflow:hidden;min-height:calc(100svh - 60px);display:flex;align-items:center;padding:56px 0}
+#home .wrap{position:relative;width:100%}
+.beam{position:absolute;right:-12%;top:4%;width:62%;height:78%;pointer-events:none;transform:skewX(-9deg);background:linear-gradient(115deg,transparent 28%,var(--glow) 28% 42%,transparent 42% 50%,var(--glow) 50% 54%,transparent 54%);-webkit-mask-image:linear-gradient(to left,#000 25%,transparent);mask-image:linear-gradient(to left,#000 25%,transparent)}
+.tag{display:inline-block;font-size:13px;color:var(--muted);border:1px solid var(--line);border-radius:99px;padding:6px 16px;background:var(--card)}
+h1{font-weight:300;font-size:clamp(3.1rem,14vw,7rem);letter-spacing:-.05em;line-height:1;margin:22px 0 16px}
+.sub{font-size:clamp(1.05rem,3.6vw,1.5rem);color:var(--muted);font-weight:300;max-width:26ch;line-height:1.4}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 26px;border-radius:99px;font:600 15px Sora,system-ui,sans-serif;text-decoration:none;border:1px solid var(--line);color:var(--text);overflow-wrap:anywhere;transition:box-shadow .25s,border-color .25s}
+.btn.p{background:var(--text);color:var(--bg);border-color:transparent}
+.btn:hover{box-shadow:0 0 34px -6px var(--acc);border-color:var(--acc)}
+.btn.na{cursor:default}
+.btn.na:hover{box-shadow:none;border-color:var(--line)}
+.hero-in>*{animation:up .8s cubic-bezier(.2,.7,.2,1) both}
+.hero-in>:nth-child(2){animation-delay:.1s}.hero-in>:nth-child(3){animation-delay:.2s}.hero-in>:nth-child(4){animation-delay:.3s}
+@keyframes up{from{opacity:0;transform:translateY(22px)}}
+.g{display:grid;grid-template-columns:repeat(12,1fr);gap:14px}
+.g>*{grid-column:span 12}
+.card{position:relative;overflow:hidden;border:1px solid var(--line);border-radius:20px;padding:24px;background:radial-gradient(90% 80% at 100% 100%,var(--glow),transparent 65%),var(--card);transition:border-color .3s}
+.card::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;background:repeating-linear-gradient(0deg,rgba(128,128,170,.06) 0 1px,transparent 1px 4px)}
+.card>*{position:relative;z-index:1}
+.card:hover{border-color:color-mix(in srgb,var(--acc) 55%,transparent)}
+.card h3{font-weight:400;font-size:1.15rem;letter-spacing:-.015em;line-height:1.3;margin:14px 0 6px}
+.card p{color:var(--muted)}
+.big{font-weight:300;font-size:clamp(1.15rem,3.2vw,1.55rem);line-height:1.55;color:var(--text)!important;letter-spacing:-.01em}
+.ico{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;border:1px solid var(--line);color:var(--acc);background:var(--bg)}
+.ic{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.row{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:flex-start}
+.pill{display:inline-block;font-size:12.5px;padding:5px 14px;border-radius:99px;border:1px solid var(--line);color:var(--muted);background:var(--bg)}
+.stat{font-weight:300;font-size:clamp(2.7rem,10vw,3.6rem);letter-spacing:-.045em;line-height:1;margin:22px 0 6px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.chip{padding:9px 18px;border-radius:12px;border:1px solid var(--line);background:var(--bg);font-size:14px;font-weight:400}
+.card .sch{margin-top:16px;padding-top:14px;border-top:1px solid var(--line);font-size:13.5px}
+.list{list-style:none;padding:0;display:grid;gap:8px;margin-top:14px}
+.list li{display:flex;gap:10px;color:var(--muted)}
+.list li::before{content:"";flex:none;width:6px;height:6px;border-radius:50%;background:var(--acc);margin-top:.68em}
+.card.hot{background:linear-gradient(135deg,#3557ff,#7a4bff);border-color:transparent;color:#fff}
+.card.hot::before{background:linear-gradient(115deg,transparent 34%,rgba(255,255,255,.2) 34% 40%,transparent 40% 58%,rgba(255,255,255,.1) 58% 62%,transparent 62%)}
+.card.hot p,.card.hot .list li{color:rgba(255,255,255,.86)}
+.card.hot .list li::before{background:#fff}
+.card.hot .ico{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.28);color:#fff}
+.card.proj{display:grid;gap:24px}
+.proj h3{font-size:clamp(1.5rem,4.5vw,2rem);font-weight:300;letter-spacing:-.03em;margin-top:0}
+.lab{font-size:13px;color:var(--muted);margin:24px 0 2px}
+.feat{grid-template-columns:1fr}
+.term{background:#0b0a12;color:#c9c5e6;border:1px solid var(--line);border-bottom:0;border-radius:14px 14px 0 0;margin:0 -24px -24px;font:12px/1.7 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;overflow:hidden;box-shadow:0 -12px 44px -12px var(--glow)}
+.term .bar{display:flex;gap:6px;padding:11px 14px;border-bottom:1px solid rgba(255,255,255,.08)}
+.term .bar i{width:9px;height:9px;border-radius:50%;background:#3a3750}
+.term pre{margin:0;padding:14px 16px 30px;white-space:pre;overflow:hidden}
+.term em{color:#9078ff;font-style:normal}
+footer{padding:30px 0 46px;text-align:center;color:var(--muted);font-size:13px;border-top:1px solid var(--line)}
+@media(min-width:520px){.feat{grid-template-columns:1fr 1fr}}
+@media(min-width:760px){.s4{grid-column:span 4}.s5{grid-column:span 5}.s6{grid-column:span 6}.s7{grid-column:span 7}.s8{grid-column:span 8}}
+@media(min-width:860px){.card.proj{grid-template-columns:1.05fr .95fr}.term{margin:0 -24px -24px 0;border-right:0;border-radius:14px 0 0 0;align-self:end}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.hero-in>*{animation:none}}
+</style>
+<script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="i-cap" viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-4.5"/></symbol>
+<symbol id="i-code" viewBox="0 0 24 24"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"/></symbol>
+<symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5L18 18M18 6l-2.5 2.5M8.5 15.5L6 18"/></symbol>
+<symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+<symbol id="i-link" viewBox="0 0 24 24"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></symbol>
+</defs></svg>
+
+<header><div class="wrap">
+<a class="logo" href="#home">Rithanya S</a>
+<nav aria-label="Main">
+<a href="#home">Home</a><a href="#about">About</a><a href="#education">Education</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#learning">Learning</a><a href="#contact">Contact</a>
+</nav>
+</div></header>
+
+<main>
+<section id="home">
+<div class="beam" aria-hidden="true"></div>
+<div class="wrap hero-in">
+<span class="tag">Government College of Technology, Coimbatore</span>
+<h1>Rithanya S</h1>
+<p class="sub">Aspiring CSE (AI &amp; ML) Engineer</p>
+<div class="btns"><a class="btn p" href="#projects">View project</a><a class="btn" href="#contact">Get in touch</a></div>
+</div>
+</section>
+
+<section id="about"><div class="wrap">
+<h2>About Me</h2>
+<div class="g">
+<div class="card s8"><p class="big">Aspiring CSE (AI &amp; ML) engineer at Government College of Technology, Coimbatore, with an interest in software development, programming, and building practical applications.</p></div>
+<div class="card s4"><div class="ico"><svg class="ic"><use href="#i-user"/></svg></div><h3>Interested in</h3>
+<ul class="list"><li>Software development</li><li>Programming</li><li>Building practical applications</li></ul></div>
+</div>
+</div></section>
+
+<section id="education"><div class="wrap">
+<h2>Education</h2>
+<div class="g">
+<div class="card"><div class="row"><div><div class="ico"><svg class="ic"><use href="#i-cap"/></svg></div>
+<h3>Government College of Technology, Coimbatore</h3><p>B.E. Computer Science and Engineering — AI &amp; ML</p></div>
+<span class="pill">2025 – 2029</span></div></div>
+<div class="card s6"><h3>Higher Secondary Certificate (HSC)</h3><p>Srinivasa Vidyalaya Matriculation Higher Secondary School, Udumalpet</p><div class="stat">97.83%</div><p>587/600</p><p class="sch">Srinivasa Vidyalaya Matriculation Higher Secondary School, Udumalpet</p></div>
+<div class="card s6"><h3>Secondary School Leaving Certificate (SSLC)</h3><p>Srinivasa Vidyalaya Matriculation Higher Secondary School, Udumalpet</p><div class="stat">93.40%</div><p>467/500</p><p class="sch">Srinivasa Vidyalaya Matriculation Higher Secondary School, Udumalpet</p></div>
+</div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+<h2>Skills</h2>
+<div class="g">
+<div class="card s7"><div class="ico"><svg class="ic"><use href="#i-code"/></svg></div><h3>Programming</h3>
+<div class="chips"><span class="chip">C</span><span class="chip">C++</span><span class="chip">Python</span></div></div>
+<div class="card hot s5"><div class="ico"><svg class="ic"><use href="#i-spark"/></svg></div><h3>AI / ML</h3>
+<ul class="list"><li>Python for AI/ML</li><li>Currently exploring AI and ML</li></ul></div>
+</div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+<h2>Featured Project</h2>
+<div class="card proj">
+<div>
+<h3>Music Management System</h3>
+<p>A file-based application for organizing and managing songs.</p>
+<p class="lab">Features</p>
+<ul class="list feat"><li>Sort songs alphabetically</li><li>Filter by genre</li><li>Filter by artist</li><li>Filter by mood</li><li>Search and list songs</li><li>File-based data storage and retrieval</li></ul>
+<p class="lab">Technologies</p>
+<div class="chips" style="margin-top:6px"><span class="chip">C</span><span class="chip">File Handling</span><span class="chip">Data Structures</span></div>
+</div>
+<div class="term" aria-hidden="true">
+<div class="bar"><i></i><i></i><i></i></div>
+<pre><em>$</em> ./music_manager
+
+  MUSIC MANAGEMENT SYSTEM
+  -----------------------
+  1. List all songs
+  2. Sort alphabetically
+  3. Filter by genre
+  4. Filter by artist
+  5. Filter by mood
+  6. Search songs
+  0. Exit
+
+  Enter choice: <em>_</em></pre>
+</div>
+</div>
+</div></section>
+
+<section id="learning"><div class="wrap">
+<h2>Currently Learning</h2>
+<div class="g">
+<div class="card s6"><h3 class="big">Data Structures &amp; Algorithms</h3></div>
+<div class="card s6"><h3 class="big">Artificial Intelligence &amp; Machine Learning</h3></div>
+<div class="card s4"><h3>Java</h3></div>
+<div class="card s4"><h3>Software Engineering</h3></div>
+<div class="card s4"><h3>Problem Solving</h3></div>
+</div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+<h2>Let's Connect</h2>
+<div class="card">
+<p class="big" style="max-width:34em">Interested in my work? Explore my projects, connect with me, and follow along as I build and grow as a software engineer.</p>
+<div class="btns">
+<a class="btn p" id="mail" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=sririthanya2007@gmail.com" target="_blank" rel="noopener"><svg class="ic"><use href="#i-mail"/></svg>sririthanya2007@gmail.com</a>
+<a class="btn" href="https://www.linkedin.com/in/rithanya-srinivasan-a23671381" target="_blank" rel="noopener"><svg class="ic"><use href="#i-link"/></svg>LinkedIn: Rithanya Srinivasan</a>
+</div>
+</div>
+</div></section>
+</main>
+
+<footer><div class="wrap">Personal portfolio project, built to showcase my learning and work.</div></footer>
+
+<script>
+(function(){
+var nav=document.querySelector("nav"),links=[].slice.call(nav.querySelectorAll("a"));
+if(!("IntersectionObserver" in window))return;
+var io=new IntersectionObserver(function(es){es.forEach(function(e){
+if(!e.isIntersecting)return;
+links.forEach(function(a){var on=a.getAttribute("href")==="#"+e.target.id;a.classList.toggle("on",on);
+if(on)nav.scrollTo({left:a.offsetLeft-24,behavior:"smooth"})})})},{rootMargin:"-45% 0px -50% 0px"});
+document.querySelectorAll("main section").forEach(function(s){io.observe(s)});
+})();
+</script>
+<script>
+(function(){
+var EM="sririthanya2007@gmail.com",
+WEB="https://mail.google.com/mail/?view=cm&fs=1&to="+EM,
+btn=document.getElementById("mail");
+if(!btn)return;
+btn.addEventListener("click",function(e){
+var ua=navigator.userAgent;
+if(/Android/i.test(ua)){
+e.preventDefault();
+location.href="intent:"+EM+"#Intent;scheme=mailto;action=android.intent.action.SENDTO;package=com.google.android.gm;S.browser_fallback_url="+encodeURIComponent(WEB)+";end";
+}else if(/iPhone|iPad|iPod/i.test(ua)){
+e.preventDefault();
+location.href="googlegmail:///co?to="+EM;
+setTimeout(function(){if(!document.hidden)location.href="mailto:"+EM},1200);
+}
+});
+})();
+</script>
+</body>
+</html>
